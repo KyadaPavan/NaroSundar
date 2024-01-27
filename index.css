@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@500&family=EB+Garamond&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@500&family=EB+Garamond&family=Open+Sans:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* NvaBar */
+nav {
+    background-color: #150303;
+    height: 80px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    margin-left: 50px;
+}
+
+.navul {
+    display: flex;
+    gap: 25px;
+}
+
+.navul a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: whitesmoke;
+
+}
+
+.navul a:hover {
+    color: rgb(255, 0, 0);
+    transition: all .5 ease-in-out;
+}
+
+.navul li {
+    list-style: none;
+}
+
+
+/* First Page */
+
+.home {
+    background-color: #150303;
+}
+
+.firstpage {
+    display: flex;
+    gap: 90px;
+}
+
+.container {
+    width: 1419px;
+    margin-left: 100px;
+}
+
+.maintag {
+    margin-top: 90px;
+}
+
+.maintag h1 {
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+.subline {
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+}
+
+.maintag button {
+    padding: 15px 50px 15px 50px;
+    font-size: 20px;
+    background-color: red;
+    color: whitesmoke;
+}
+
+.maintag button:hover {
+    color: black;
+    background-color: white;
+    transition: all 5 ease-in-out;
+}
+
+.rightimg img {
+    height: 650px;
+    width: 880px;
+}
+
+
+/* Second Page */
+
+
+.secondpage {
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    gap: 70px;
+}
+
+.leftlist {
+    margin-top: 30px;
+    width: 800px;
+}
+
+.leftlist li {
+    list-style: none;
+}
+
+.list1 {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.list1 img {
+    vertical-align: middle;
+}
+
+.centerimg img {
+    width: 450px;
+    height: 500px;
+}
+
+
+.rightpara {
+    margin-top: 10px;
+    width: 750px;
+    padding-right: 90px;
+}
+
+.rightpara img {
+    width: 80px;
+}
+
+.rightpara h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.rightpara p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.rightpara button {
+    padding: 15px 50px 15px 50px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
+
+.rightpara button:hover {
+    color: whitesmoke;
+    background-color: red;
+    transition: all 5 ease-in-out;
+}
+
+
+/* Price and Service Page */
+
+.pricepage {
+    margin-top: 100px;
+    display: flex;
+    gap: 150px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+
+.gallery img {
+    height: 250px;
+    width: 250px;
+}
+
+.menu {
+    width: 550px;
+}
+
+.haristyle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.menu h1 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    border-bottom: 1px solid black;
+}
+
+
+.haristyle h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+.haristyle p {
+    font-size: 20px;
+}
+
+
+/* Service Page */
+
+.service {
+    display: flex;
+    gap: 280px;
+    margin-top: 100px;
+}
+
+.dropdown h1 {
+    font-size: 2.5rem;
+  
+}
+
+.main {
+
+    margin-top: 50px;
+}
+
+.dropdown_button {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 500px;
+    display: flex;
+    transition: all .5 ease-in-out;
+}
+
+.treatment {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all .5 ease-in-out;
+}
+
+.treatment li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    list-style: none;
+    background-color: white;
+    font-family: montserrat;
+    transition: all .5 ease-in-out;
+    
+}
+
+.treatment li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    transition: all .5 ease-in-out;
+}
+
+
+.forhair , .forbeared{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #27272738;
+}
+
+.forhair p , .forbeared p{
+    font-size: 18px;
+}
+
+/* Slide Up Box Page */
+
+
+.slideuppage {
+    margin-top: 100px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slideupbox {
+    display: flex;
+    gap: 100px;
+
+}
+
+.slidebox {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background-color: #150303;
+    border-radius: 20px;
+    color: white;
+    padding: 40px;
+    overflow: hidden;
+
+}
+
+.slidebox h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imageinbox {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.slidebox:hover {
+    background-color: white;
+    color: black;
+    transition: all .3 ease-in-out;
+}
+
+.imageline img {
+    display: inline-block;
+    height: 225px;
+    width: 300px;
+
+}
+
+
+
+
+/* Customer riviews */
+
+.riviews {
+    margin-top: 100px;
+}
+
+
+.customer1,
+.customer2,
+.customer3 {
+    border: 1px solid rgba(90, 88, 88, 0.432);
+    width: 450px;
+    height: 300px;
+    padding: 55px;
+
+}
+
+.customerriview {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.customerproflie {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.customer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.firstimage,
+.firstheading {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/* footer */
+
+.footer {
+    background-color: #150303;
+    color: white;
+    margin-top: 120px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.461);
+}
+
+.information {
+    margin-left: 100px;
+    margin-right: 100px;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.256);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.leftcontact,
+.centerinfo,
+.rightcontact {
+    width: 300px;
+    margin-top: 100px;
+}
+
+.leftcontact p,
+.rightcontact p {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.leftcontact p:hover,
+.rightcontact p:hover {
+    text-decoration: underline;
+}
+
+.rightcontact img {
+    height: 30px;
+    width: 30px;
+}
+
+.centerinfoimg {
+    display: flex;
+    justify-content: center;
+
+}
+
+.centerinfo p {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socialmedia img {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 50px;
+}
+
+.copyright {
+    margin-top: 50px;
+    color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.topbuttton img {
+    height: 60px;
+    width: 60px;
+}
+
+.topbutton button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    float: right;
+    margin-right: 40px;
+    position: fixed;
+    bottom: 20px77;
+    right: 30px;
+}
